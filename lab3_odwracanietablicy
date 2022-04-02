@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+void odwroc (int i)
+{
+  int tab[5] = { 1, 2, 3, 4, 5 };
+  if (i >= 0)
+    {
+      cout << tab[i] << endl;
+      odwroc (i - 1);
+    }
+}
+
+int main ()
+{
+  int j = 4;
+  odwroc (j);
+}
